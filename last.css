@@ -1,0 +1,95 @@
+:root{
+    --red: #ff2e63;
+    --black: #252a34;
+    --blue: #08d9d6;
+    --white: #eaeaea;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+    font-family: 'Oswald', sans-serif;
+    overflow-x: hidden;
+
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+#header{
+    position: relative;
+    width: 100%;
+}
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   z-index: 9999;
+}
+.menu .logo-box{
+    margin-left: 20px;
+}
+.menu .logo-box h1 a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 400;
+    color: var(--black);
+    
+}
+#btn-menu{
+    display: none;
+}
+.list-container .list{
+    display: flex;
+}
+.list-container .list li {
+    list-style: none;
+}
+.list-container .list li a{
+    text-decoration: none;
+    margin: 20px;
+    padding: 8px;
+    color: var(--black);
+    transition: 0.5s;
+    border-radius:24px ;
+    font-size: 17px;
+}
+.list-container .list li a.activo{
+background: var(--red);
+color: #fff;
+}
+.list-container .list li a:hover{
+background: var(--red);
+color: #fff;
+}
+
+.img-header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./img/header.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+}
